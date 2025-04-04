@@ -84,7 +84,7 @@
         if (char.match(/[a-z]/)) {
           tradotto += mappa[char] + ' ';
         } else if (char === ' ') {
-          tradotto += '  ';
+          tradotto += 'qs ';
         } else {
           tradotto += char;
         }
@@ -104,7 +104,8 @@
 
         if (mappaInversa[blocco]) {
           tradotto += mappaInversa[blocco];
-        } else if (blocco === '') {
+        } else if (blocco === 'qs') {
+          tradotto += ' ';
           spazi++;
           if (spazi === 2) {
             tradotto += ' ';
